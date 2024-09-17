@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #384B70;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 20px;
+    padding-top: 80px;
+}
+.title{
+    color: #FCFAEE;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.checking-section{
+    background-color: #FCFAEE;
+    border-radius: 5px;
+    width: 30%;
+    height: fit-content;
+    color: #384B70;
+    padding-top: 15px;
+    text-align: center;
+    box-shadow: 0 6px 6px #507687;
+}
+.checking-section label{
+    font-size: 20px;
+}
+#text-input{
+    background-color: #FCFAEE;
+    margin-top: 25px;
+    outline-color: #507687;
+    height: 31px;
+    color: #384B70;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #507687;
+}
+#check-btn{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 7px;
+    background-color: #507687;
+    color: #FCFAEE;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#check-btn:hover{
+    background-color: #FCFAEE;
+    color: #507687;
+    border: 1px solid #507687;
+    cursor: pointer;
+}
+#result{
+    color: #B8001F;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+.palindrome-def{
+    width: 30%;
+    height: fit-content;
+    background-color: #507687;
+    color: #FCFAEE;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#bulb{
+    margin-right: 10px;
+    color: rgb(255, 255, 0);
+}
+@media (max-width: 820px){
+    .checking-section label{
+        font-size: 1em;
+    }
+    #text-input{
+        margin-top: 15px;
+        height: 25px;
+        font-size: 1rem;
+        width: 90%;
+    }
+    #check-btn{
+        width: 70px;
+        height: 28px;
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+    #result{
+        font-size: 1rem;
+    }
+    .palindrome-def{
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+}
